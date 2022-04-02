@@ -1,4 +1,5 @@
-const {binary_search, testCase as testCase_binary} = require('./algorithm/binary_search.js');
+const { binary_search, testCase: binary_search_testCase } = require('./algorithm/binary_search.js');
+const { test_runner } = require('./test_runner');
 
 console.log('hi')
-binary_search();
+test_runner(binary_search, binary_search_testCase)
